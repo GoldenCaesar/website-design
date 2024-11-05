@@ -83,4 +83,5 @@ window.addEventListener('scroll', function() {
 
         lastScrollPosition = scrollPosition;
     }, 80); 
-});
+}); 
+// working 11.5.24-12.56pm
