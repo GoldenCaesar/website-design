@@ -1,0 +1,203 @@
+section {
+    height: 100vh;
+    margin: 0;
+  }
+  
+section.active {
+background-color: #f0f0f0; 
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+#section1 .background-video {
+position: absolute; /* Ensure video covers the section */
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover; /* Cover the entire section */
+z-index: -1;       /* Place video behind other content */
+}
+
+#section1 .section-content {
+position: relative; /* Position content relative to the section */
+z-index: 1;        /* Place content above the video */
+color: white; /* Example: Make text visible on the video */
+padding: 20px; /* Example: Add some padding */
+}
+
+section {
+    height: 100vh;
+    margin: 0;
+}
+
+/* ... other section styles ... */
+
+@font-face {
+    font-family: 'Compass';
+    src: url('fonts/Compass.ttf') format('truetype'); /* Corrected format */
+    font-weight: normal; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Compass';
+    src: url('fonts/Compass-Bold.ttf') format('truetype'); /* This one was likely okay */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Compass';
+    src: url('fonts/Compass-light.tff') format('truetype'); /* This one was likely okay */
+    font-weight: light;
+    font-style: normal;
+}
+
+/* If you have other font files, add their @font-face rules here, 
+   making sure the format matches the file extension.
+   For example:
+   @font-face {
+       font-family: 'Compass';
+       src: url('fonts/Compass-Italic.woff2') format('woff2');
+       font-weight: normal;
+       font-style: italic;
+   }
+
+   @font-face {
+       font-family: 'Compass';
+       src: url('fonts/Compass-BoldItalic.woff2') format('woff2');
+       font-weight: bold;
+       font-style: italic;
+   }
+
+   etc.
+*/
+
+body {
+    font-family: 'Compass', sans-serif;
+}
+
+h1 {
+    font-weight: bold; 
+}
+
+em {
+    font-style: light; 
+}
+
+#section2 {
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Needed for absolute positioning of children */
+}
+
+.section2-header {
+    background-color: rgba(43, 42, 43, 1);
+    color: white;
+    height: 20%;  /* Top 20% of the section */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    font-family: 'Compass', sans-serif; /* Assuming Compass is already defined */
+    font-weight: bold;
+}
+
+.section2-content {
+    height: 80%;  /* Remaining 80% of the section */
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.text-box {
+    width: 50%; /* Or adjust as needed */
+    text-align: left; /* Justify text to the left */
+}
+
+.video-container {
+    width: 50%; /* Or adjust as needed */
+    text-align: right; /* Align video to the right */
+}
+
+/* Responsive adjustments (example): */
+@media (max-width: 768px) {  /* Adjust breakpoint as needed */
+  .section2-content {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+  .text-box, .video-container {
+    width: 100%;
+    text-align: center; /* Center content on smaller screens */
+  }
+}
+
+#section3 {
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+  
+  .section3-header {
+    background-color: white;
+    color: black;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Compass', sans-serif;
+    font-weight: bold; /* Or adjust font-weight as needed */
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    height: 80%;  /* Fill the remaining 80% */
+    gap: 0px; /* Remove any gaps between images */
+  }
+  
+  .image-container {
+      position: relative; /* For absolute positioning of text */
+      display: block;      /* Make the <a> element a block */
+      text-decoration: none; /* Remove underline from the link*/
+  
+  }
+  
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure images cover the entire container */
+    display: block;
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 10px; /* Adjust positioning as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    color: white; /* Or a color that contrasts with your images */
+    font-size: 1.2em; /* Adjust font size */
+    padding: 5px 10px;  /* Add padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      font-family: 'Compass', sans-serif; /* Assuming Compass is already defined */
+      font-weight: bold;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) { /* Or adjust the breakpoint */
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+      grid-template-rows: repeat(3, 1fr); /* 3 rows on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) { /* For even smaller screens */
+    .image-grid {
+      grid-template-columns: 1fr; /* 1 column */
+      grid-template-rows: repeat(6, 1fr); /* 6 rows */
+    }
+  }

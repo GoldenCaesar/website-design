@@ -1,0 +1,330 @@
+section {
+  height: 100vh;
+  margin: 0;
+}
+
+section.active {
+background-color: #f0f0f0; 
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+#section1 .background-video {
+position: absolute; /* Ensure video covers the section */
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover; /* Cover the entire section */
+z-index: -1;       /* Place video behind other content */
+transform: scale(1.1);
+overflow-x: hidden;
+}
+
+#section1 .section-content {
+position: relative; /* Position content relative to the section */
+z-index: 1;        /* Place content above the video */
+color: white; /* Example: Make text visible on the video */
+padding: 20px; /* Example: Add some padding */
+}
+
+section {
+  height: 100vh;
+  margin: 0;
+}
+
+/* ... other section styles ... */
+
+@font-face {
+  font-family: 'Compass';
+  src: url('fonts/Compass.ttf') format('truetype'); /* Corrected format */
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Compass';
+  src: url('fonts/Compass-Bold.ttf') format('truetype'); /* This one was likely okay */
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Compass';
+  src: url('fonts/Compass-light.tff') format('truetype'); /* This one was likely okay */
+  font-weight: light;
+  font-style: normal;
+}
+
+/* If you have other font files, add their @font-face rules here, 
+ making sure the format matches the file extension.
+ For example:
+ @font-face {
+     font-family: 'Compass';
+     src: url('fonts/Compass-Italic.woff2') format('woff2');
+     font-weight: normal;
+     font-style: italic;
+ }
+
+ @font-face {
+     font-family: 'Compass';
+     src: url('fonts/Compass-BoldItalic.woff2') format('woff2');
+     font-weight: bold;
+     font-style: italic;
+ }
+
+ etc.
+*/
+
+body {
+  font-family: 'Compass', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: bold; 
+}
+
+em {
+  font-style: light; 
+}
+
+#section2 {
+  height: 100vh;
+  margin: 0;
+  position: relative; /* Needed for absolute positioning of children */
+}
+
+.section2-header {
+  background-color: rgba(43, 42, 43, 1);
+  color: white;
+  height: 20%;  /* Top 20% of the section */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  font-family: 'Compass', sans-serif; /* Assuming Compass is already defined */
+  font-weight: bold;
+}
+
+.section2-content {
+  height: 80%;  /* Remaining 80% of the section */
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.text-box {
+  width: 50%; /* Or adjust as needed */
+  text-align: left; /* Justify text to the left */
+}
+
+.video-container {
+  width: 50%; /* Or adjust as needed */
+  text-align: right; /* Align video to the right */
+}
+
+/* Responsive adjustments (example): */
+@media (max-width: 768px) {  /* Adjust breakpoint as needed */
+.section2-content {
+  flex-direction: column; /* Stack vertically on smaller screens */
+}
+.text-box, .video-container {
+  width: 100%;
+  text-align: center; /* Center content on smaller screens */
+}
+}
+
+#section3 {
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.section3-header {
+  background-color: white;
+  color: black;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Compass', sans-serif;
+  font-weight: bold; /* Or adjust font-weight as needed */
+}
+
+.image-grid { display: grid; grid-template-columns: repeat(3, 1fr); /* 3 columns */ 
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */ 
+  height: 80%; /* Fill the remaining 80% */ 
+  gap: 0px; /* Remove any gaps between images */ 
+} 
+.image-container { 
+  position: relative; /* For absolute positioning of text */ 
+  display: block; /* Make the <a> element a block */ 
+  text-decoration: none; /* Remove underline from the link */ 
+  overflow: hidden; /* Ensure the zoomed image stays within its container */ 
+} 
+.image-container img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Ensure images cover the entire container */ 
+  transition: transform 0.5s ease; /* Smooth zoom transition */ 
+} 
+.image-container img:hover { 
+  transform: scale(1.5); /* Zoom in */ 
+} 
+.image-text { 
+  position: absolute; 
+  bottom: 10px; /* Adjust positioning as needed */ 
+  left: 50%; 
+  transform: translateX(-50%); /* Center horizontally */ 
+  color: white; /* Or a color that contrasts with your images */ 
+  font-size: 1.2em; /* Adjust font size */ 
+  padding: 5px 10px; /* Add padding */ 
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */ 
+  font-family: 'Compass', sans-serif; /* Assuming Compass is already defined */ 
+  font-weight: normal; 
+}
+
+/* style.css */
+
+/* General Styles */
+body {
+  font-family: sans-serif;  /* Default font */
+  margin: 0;              /* Reset margins */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: transparent; /* Light gray background */
+  padding: 10px;
+  position: fixed;
+  width: 90%;
+  z-index: 10;  /* Above other content */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background changes */
+  position: sticky;
+  top: 1em; /* Stick to the top */
+  transition: transform 0.3s ease-in-out; 
+}
+
+nav.hidden {
+  transform: translateY(-200%);
+  top: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1200px;   /* Or whatever your desired max-width is */
+  margin: 0 auto;       /* Center horizontally */
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  background-color: #333; /* Fill color */
+  color: white;           /* Text color */
+  padding: 10px 20px;    /* Adjust padding */
+  border-radius: 20px;    /* Adjust border-radius */
+  border: 2px solid white; /* White border */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Add border to transition*/
+}
+
+.nav-list a:hover {
+  background-color: white; /* White background on hover */
+  color: #333;          /* Dark text on hover */
+  border-color: #333; /* Border changes to dark on hover */
+}
+
+
+
+/* Sandwich Menu and Overlay */
+.sandwich-menu {
+  display: none;      /* Hidden by default */
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  z-index: 12;       /* Above overlay */
+  transition: transform 0.3s ease-in-out;
+}
+
+.sandwich-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 4px auto;   /* Center the lines */
+  background-color: black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  transform: translateX(-100%); /* Hidden off-screen initially */
+  transition: transform 0.3s ease-in-out;
+  z-index: 11;       /* Above other content but below sandwich */
+  display: flex;
+  flex-direction: column;  /* Align items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+}
+
+
+.overlay.open {
+  transform: translateX(0);  /* Slide in */
+}
+
+
+/*THIS IS BROKEN, USE JS INSTEAD*/
+.sandwich-menu.overlay-open span { /* Target spans when overlay is open */
+  background-color: white;
+}
+
+
+
+.overlay-menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;   /* Center the menu items */
+}
+
+.overlay-menu li {
+  margin: 15px 0;
+}
+
+.overlay-menu a {
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+
+
+/* Media Query for Responsive Behavior */
+@media (max-width: 767px) {
+  /* Hide the nav-list on smaller screens, but DON'T affect the hidden class */
+  .nav-list {
+    display: none;
+  }
+  .sandwich-menu {
+    display: block; /* Show sandwich menu on small screens */
+  }
+}

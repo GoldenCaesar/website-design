@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-container">
+        <div id="sandwich" class="sandwich-menu">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Real Estate</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="overlay">
+        <ul class="overlay-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Real Estate</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- <h1 id="h1">Welcome to My Website</h1>
+  <p id="p1">This is a sample paragraph.</p> -->
+
+  <section id="section1">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="resources/homepage-background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Content for Section 1 (over the video) -->
+    <div class="section-content">
+      <h2>Section 1 Content</h2>
+      <p>This content is placed over the background video.</p>
+      <img src="resources/LargeLogo-anavivo-white.png" alt="Logo" style="width: 100%; height: auto;">
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="section2-header">
+      <h2>ANAVIVO Podcast</h2>  </div>
+    <div class="section2-content">
+          <div style="text-align: center; overflow-y: scroll; flex: auto">
+            <iframe src="https://castbox.fm/app/castbox/player/id5292240?v=8.22.11&amp;autoplay=0" width="100%" height="500" frameborder="0">
+            </iframe>
+          </div>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="section3-header">
+      <h2>Featured Neighborhoods</h2>
+    </div>
+    <div class="image-grid">
+      <a href="tabs/whidbey.html" class="image-container">
+        <img src="resources/whidbey.jpg" alt="Whidbey Island">
+        <div class="image-text">Whidbey Island</div>
+      </a>
+      <a href="articles/week24.html" class="image-container">
+        <img src="resources/oakharbor.jpg" alt="Oak Harbor">
+        <div class="image-text">Oak Harbor (NAS Whidbey Island)</div>
+      </a>
+      <a href="tabs/coupeville.html" class="image-container">
+        <img src="resources/coupeville.jpg" alt="Coupeville">
+        <div class="image-text">Coupeville</div>
+      </a>
+      <a href="tabs/anacortes.html" class="image-container">
+        <img src="resources/anacortes.jpg" alt="Anacortes">
+        <div class="image-text">Anacortes</div>
+      </a>
+      <a href="tabs/sanjuan.html" class="image-container">
+        <img src="resources/sanjuan.jpg" alt="San Juan Islands">
+        <div class="image-text">San Juan Islands</div>
+      </a>
+      <a href="tabs/langley.html" class="image-container">
+        <img src="resources/langley.jpg" alt="Langley">
+        <div class="image-text">Langley</div>
+      </a>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

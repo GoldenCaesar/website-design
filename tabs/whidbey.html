@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-container">
+        <div id="sandwich" class="sandwich-menu">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Real Estate</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="overlay">
+        <ul class="overlay-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Real Estate</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- <h1 id="h1">Welcome to My Website</h1>
+  <p id="p1">This is a sample paragraph.</p> -->
+
+  <section id="section1">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="resources/homepage-background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Content for Section 1 (over the video) -->
+    <div class="section-content">
+      <h2>Section 1 Content</h2>
+      <p>This content is placed over the background video.</p>
+      <img src="resources/LargeLogo-anavivo-white.png" alt="Logo" style="width: 100%; height: auto;">
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="section2-header">
+      <h2>ANAVIVO Podcast</h2>  </div>
+    <div class="section2-content">
+        <div class="lp-container">
+            <h2 class="title lp-h2">Demographics and Employment Data for Whidbey Island, WA</h2>
+            <div class="nav-tab">
+                <span href="#tab-population" data-description=".addition--population" class="nav-tab__tab active">Population</span>
+                <span href="#tab-households" data-description=".addition--households" class="nav-tab__tab">Households</span>
+                <span href="#tab-employment" data-description=".addition--employment" class="nav-tab__tab">Employment</span>
+            </div>
+            <div class="description">
+                <p>
+                <span class="addition addition--households">Whidbey Island has 80 households, with an average household size of 1.61. Data provided by the U.S. Census Bureau.</span>
+                <span class="addition addition--employment">Here’s what the people living in Whidbey Island do for work — and how long it takes them to get there. Data provided by the U.S. Census Bureau.</span>
+                 
+                </p>
+    
+            </div>
+            <div class="tabs-content">
+                <div class="tab active" id="tab-population">
+                    <div class="tab-section tab-section__overview">
+                        <div class="overview-item">
+                            <div>
+                                <h5 class="overview-item__value lp-h5">2,644</h5>
+                                <p class="overview-item__name l12 label">Total Population</p>
+                            </div>
+                        </div> 
+                        <div class="overview-item">
+                            <div>
+                                <h5 class="overview-item__value lp-h5">
+                                High
+                                                            </h5>
+                                <p class="overview-item__name overview-item__name--hint l12 label">Population Density
+                                    <span class="overview-item__hint hint">
+                                        <span class="l14 weight-bold">Population Density</span>
+                                        <span class="l14">This is the number of people per square mile in a neighborhood.</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div>
+                                <h5 class="overview-item__value lp-h5">22.2</h5>
+                                <p class="overview-item__name l12 label">Median Age</p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div>
+                                <h5 class="overview-item__value lp-h5">81.16 / 18.84%</h5>
+                                <p class="overview-item__name l12 label">Men vs Women</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-section tab-section__content">
+                        <div class="population-age">
+                            <p class="tab-section__title l12 label">Population by Age Group</p>
+                            <div class="population-age__item" style="--valuePerc: 0.49%;">
+                                <div class="population-age__bar bar" data-value="0.49">
+                                    <div class="population-age__hint">
+                                        <p>0-9: <span class="value">0.49%</span></p>
+                                    </div>
+                                </div>
+    
+                                <p class="population-age__range l12">0-9 Years</p>
+                            </div>
+                            <div class="population-age__item" style="--valuePerc: 0.57%;">
+                                <div class="population-age__bar bar" data-value="0.57">
+                                    <div class="population-age__hint">
+                                        <p>10-17: <span class="value">0.57%</span></p>
+                                    </div>
+                                </div>
+                                <p class="population-age__range l12">10-17 Years</p>
+                            </div>
+                            <div class="population-age__item" style="--valuePerc: 83.77%;">
+                                <div class="population-age__bar bar" data-value="83.77">
+                                    <div class="population-age__hint">
+                                        <p>18-24: <span class="value">83.77%</span></p>
+                                    </div>
+                                </div>
+                                <p class="population-age__range l12">18-24 Years</p>
+                            </div>
+                            <div class="population-age__item" style="--valuePerc: 15.17%;">
+                                <div class="population-age__bar bar" data-value="15.17">
+                                    <div class="population-age__hint">
+                                        <p>25-64: <span class="value">15.17%</span></p>
+                                    </div>
+                                </div>
+                                <p class="population-age__range l12">25-64 Years</p>
+                            </div>
+                            <div class="population-age__item" style="--valuePerc: %;">
+                                <div class="population-age__bar bar" data-value="">
+                                    <div class="population-age__hint">
+                                        <p>65-74: <span class="value">%</span></p>
+                                    </div>
+                                </div>
+                                <p class="population-age__range l12">65-74 Years</p>
+                            </div>
+                            <div class="population-age__item" style="--valuePerc: %;">
+                                <div class="population-age__bar bar" data-value="">
+                                    <div class="population-age__hint">
+                                        <p>75+: <span class="value">%</span></p>
+                                    </div>
+                                </div>
+                                <p class="population-age__range l12">75+ Years</p>
+                            </div>
+                        </div>
+                        <div class="population-education">
+                            <p class="tab-section__title l12 label">Education Level</p>
+                            <div class="population-education__chart">
+                                <div class="population-education__chart-item chart-item chart-item--school" data-value=""></div>
+                                <div class="population-education__chart-item chart-item chart-item--high-school" data-value="130" style="--valuePerc: 66%;"></div>
+                                <div class="population-education__chart-item chart-item chart-item--associate" data-value="33" style="--valuePerc: 17%;"></div>
+                                <div class="population-education__chart-item chart-item chart-item--bachelor" data-value=""></div>
+                                <div class="population-education__chart-item chart-item chart-item--graduate" data-value="34" style="--valuePerc: 17%;"></div>
+                            </div>
+                            <ul class="population-education__symbols">
+                                <li class="population-education__symbol symbol symbol-school" data-value="">
+                                    <span class="symbol__label l12">Less Than 9th Grade</span>
+                                    <span class="symbol__value value l12">0 (0%)</span>
+                                </li>
+                                <li class="population-education__symbol symbol symbol-high-school" data-value="130">
+                                    <span class="symbol__label l12">High School Degree</span>
+                                    <span class="symbol__value value l12">130 (66%)</span>
+                                </li>
+                                <li class="population-education__symbol symbol symbol-associate" data-value="33">
+                                    <span class="symbol__label l12">Associate Degree</span>
+                                    <span class="symbol__value value l12">33 (17%)</span>
+                                </li>
+                                <li class="population-education__symbol symbol symbol-bachelor" data-value="">
+                                    <span class="symbol__label l12">Bachelor Degree</span>
+                                    <span class="symbol__value value l12">0 (0%)</span>
+                                </li>
+                                <li class="population-education__symbol symbol symbol-graduate" data-value="34">
+                                    <span class="symbol__label l12">Graduate Degree</span>
+                                    <span class="symbol__value value l12">34 (17%)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab-households">
+                    <div class="tab-section tab-section__overview tab-section__overview--three">
+                        <div class="overview-item">
+                            <div>
+                                <h5 class="overview-item__value lp-h5">80</h5>
+                                <p class="overview-item__name l12 label">Total Households</p>
+                            </div>
+                        </div>                    
+                        <div class="overview-item">
+                            <div>
+                                <h5 class="overview-item__value lp-h5">1.61</h5>
+                                <p class="overview-item__name l12 label">Average Household Size</p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div>
+                                <h5 class="overview-item__value lp-h5">$24,135</h5>
+                                <p class="overview-item__name l12 label">Average individual Income</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-section chart-binary chart-binary--households">
+                        <p class="tab-section__title chart-binary__title l12 label">Households with Children</p>                    
+                        <div class="chart-binary__chart" data-value="14" data-total="80" style="--value-second: 66; --valueFormatted: 14; --valueFormatted2: 66; --valuePerc: 18%; --valuePerc2: 82%;">
+                            <div class="chart-binary__item chart-binary__item-first">
+                                <div class="chart-binary__bar"></div>
+                                <p class="chart-binary__label l12">With Children: <span class="value value-first">14 (18%)</span></p>
+                            </div>
+                            <div class="chart-binary__item chart-binary__item-second">
+                                <div class="chart-binary__bar"></div>
+                                <p class="chart-binary__label l12">Without Children: <span class="value value-second">66 (82%)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-section">
+                        <p class="tab-section__title l12 label">Marital Status</p>
+                        <div class="chart-monobar chart-monobar--marital-status">
+                            <div class="chart-monobar__item chart-monobar__item--married" data-value="2.16" style="--value: 2.16; --valuePerc: 2%;">
+                                <div class="chart-monobar__bar"></div>
+                                <div class="chart-monobar__copy">
+                                    <span class="chart-monobar__label l12">Married</span>
+                                    <span class="chart-monobar__value value l12">2%</span>
+                                </div>
+                            </div>
+                            <div class="chart-monobar__item chart-monobar__item--single" data-value="90.96" style="--value: 90.96; --valuePerc: 91%;">
+                                <div class="chart-monobar__bar"></div>
+                                <div class="chart-monobar__copy">
+                                    <span class="chart-monobar__label l12">Single</span>
+                                    <span class="chart-monobar__value value l12">91%</span>
+                                </div>
+                            </div>
+                            <div class="chart-monobar__item chart-monobar__item--divorced" data-value="0.42" style="--value: 0.42; --valuePerc: 0%;">
+                                <div class="chart-monobar__bar"></div>
+                                <div class="chart-monobar__copy">
+                                    <span class="chart-monobar__label l12">Divorced</span>
+                                    <span class="chart-monobar__value value l12">0%</span>
+                                </div>
+                            </div>
+                            <div class="chart-monobar__item chart-monobar__item--separated" data-value="5.82" style="--value: 5.82; --valuePerc: 6%;">
+                                <div class="chart-monobar__bar"></div>
+                                <div class="chart-monobar__copy">
+                                    <span class="chart-monobar__label l12">Separated</span>
+                                    <span class="chart-monobar__value value l12">6%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab-employment">
+                    <div class="tab-section chart-binary chart-binary--employment">
+                        <p class="tab-section__title chart-binary__title l12 label">Blue vs White Collar Workers</p>                    
+                        <div class="chart-binary__chart" data-value="" data-value-second="1.21" data-units="%" style="--valueFormatted: NaN; --valueFormatted2: 1; --valuePerc: NaN%; --valuePerc2: NaN%;">
+                            <div class="chart-binary__item chart-binary__item-first">
+                                <div class="chart-binary__bar"></div>
+                                <p class="chart-binary__label l12">Blue Collar: <span class="value value-first">NaN%</span></p>
+                            </div>
+                            <div class="chart-binary__item chart-binary__item-second">
+                                <div class="chart-binary__bar"></div>
+                                <p class="chart-binary__label l12">White Collar: <span class="value value-second">NaN%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-section chart-monobar chart-monobar--commute-time">
+                        <p class="tab-section__title l12 label">Commute Time</p>
+                        <div class="chart-monobar__item chart-monobar__item--period1" data-value="88.09" style="--value: 88.09; --valuePerc: 88%;">
+                            <div class="chart-monobar__bar"></div>
+                            <div class="chart-monobar__copy">
+                                <span class="chart-monobar__label l12">0 to 14 Minutes</span>
+                                <span class="chart-monobar__value value l12">88%</span>
+                            </div>
+                        </div>
+                        <div class="chart-monobar__item chart-monobar__item--period2" data-value="10.17" style="--value: 10.17; --valuePerc: 10%;">
+                            <div class="chart-monobar__bar"></div>
+                            <div class="chart-monobar__copy">
+                                <span class="chart-monobar__label l12">15 to 29 Minutes</span>
+                                <span class="chart-monobar__value value l12">10%</span>
+                            </div>
+                        </div>
+                        <div class="chart-monobar__item chart-monobar__item--period3" data-value="0.11" style="--value: 0.11; --valuePerc: 0%;">
+                            <div class="chart-monobar__bar"></div>
+                            <div class="chart-monobar__copy">
+                                <span class="chart-monobar__label l12">30 to 59 Minutes</span>
+                                <span class="chart-monobar__value value l12">0%</span>
+                            </div>
+                        </div>
+                        <div class="chart-monobar__item chart-monobar__item--period4" data-value="" style="--value: NaN; --valuePerc: 0%;">
+                            <div class="chart-monobar__bar"></div>
+                            <div class="chart-monobar__copy">
+                                <span class="chart-monobar__label l12">60+ Minutes</span>
+                                <span class="chart-monobar__value value l12">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="section3-header">
+      <h2>Featured Neighborhoods</h2>
+    </div>
+    <div class="image-grid">
+      <a href="tabs/whidbey.html" class="image-container">
+        <img src="resources/whidbey.jpg" alt="Whidbey Island">
+        <div class="image-text">Whidbey Island</div>
+      </a>
+      <a href="tabs/oakharbor.html" class="image-container">
+        <img src="resources/oakharbor.jpg" alt="Oak Harbor">
+        <div class="image-text">Oak Harbor (NAS Whidbey Island)</div>
+      </a>
+      <a href="tabs/coupeville.html" class="image-container">
+        <img src="resources/coupeville.jpg" alt="Coupeville">
+        <div class="image-text">Coupeville</div>
+      </a>
+      <a href="tabs/anacortes.html" class="image-container">
+        <img src="resources/anacortes.jpg" alt="Anacortes">
+        <div class="image-text">Anacortes</div>
+      </a>
+      <a href="tabs/sanjuan.html" class="image-container">
+        <img src="resources/sanjuan.jpg" alt="San Juan Islands">
+        <div class="image-text">San Juan Islands</div>
+      </a>
+      <a href="tabs/langley.html" class="image-container">
+        <img src="resources/langley.jpg" alt="Langley">
+        <div class="image-text">Langley</div>
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
