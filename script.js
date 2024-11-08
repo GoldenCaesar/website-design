@@ -1,87 +1,70 @@
-let lastScrollPosition = 0;
+// *** Replace your old JS with this code ***
 let scrollTimeout;
-let lastScrollY = window.scrollY; // Initialize outside the event listener
+let smoothScrollingEnabled = true;
 
-const sandwichMenu = document.getElementById("sandwich");
-const overlay = document.getElementById("overlay");
-const body = document.body;
+const sections = document.querySelectorAll('section');
 const nav = document.getElementById('nav');
-// const h1 = document.getElementById('h1');
-// const p1 = document.getElementById('p1');
-const section1 = document.getElementById('section1');
-const section2 = document.getElementById('section2');
-const section3 = document.getElementById('section3');
+
+window.addEventListener('scroll', function() {
+    if (!smoothScrollingEnabled) return;
+
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(function() {
+        let targetSection = null;
+        const scrollPosition = window.scrollY;
+
+        for (let i = 0; i < sections.length; i++) {
+            const section = sections[i];
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const scrollThreshold = sectionTop + sectionHeight * 0.5;
+
+            //If any section has no height move to next section.
+            if(sectionHeight === 0){
+                continue;
+            }
 
 
+            if (scrollPosition < scrollThreshold) {
+                targetSection = section;
+                break; // Found target, exit loop early
+            } else if( i === sections.length - 1){
+                targetSection = sections[i]; // Reached the last section
+                break;
+            }
+        }
 
-
-sandwichMenu.addEventListener("click", () => {
-  overlay.classList.toggle("open");
-  sandwichMenu.classList.toggle("overlay-open");
-  if (overlay.classList.contains("open")) {
-    body.style.overflow = "hidden";
-  } else {
-    body.style.overflow = "auto";
-  }
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+            smoothScrollingEnabled = false;
+            setTimeout(() => {
+                smoothScrollingEnabled = true;
+            }, 600); // Adjust delay as needed
+        }
+    }, 80);
 });
 
 
 
-
 window.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;
-    const scrollDifference = scrollPosition - lastScrollPosition;
-    const currentScrollY = window.scrollY; // currentscrollY inside the listener
+    const currentScrollY = window.scrollY;
     const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
 
-    const nearTop = scrollPosition < 100;
+
+    const nearTop = currentScrollY < 100;
 
     if (nearTop) {
         return;
     }
 
 
-    if (scrollDirection === 'down' && currentScrollY > section1.offsetTop - nav.offsetHeight) {
+    if (scrollDirection === 'down' && currentScrollY > sections[0].offsetTop - nav.offsetHeight) {
         nav.classList.add('hidden');
 
-    } else if (scrollDirection === 'up' && currentScrollY < section2.offsetTop - nav.offsetHeight) {
+    } else if (scrollDirection === 'up') {
         nav.classList.remove('hidden');
 
     }
-    lastScrollY = currentScrollY; // Update lastScrollY *after* checking the conditions
 
-    clearTimeout(scrollTimeout);
-
-    scrollTimeout = setTimeout(function() {
-        let targetSection;
-
-        if (scrollDifference > 0) { // Scrolling down
-            if (scrollPosition > nav.offsetTop && scrollPosition < section1.offsetTop) {
-                targetSection = section1; // Correct this line
-            } else if (scrollPosition > section1.offsetTop && scrollPosition < section2.offsetTop) {
-                targetSection = section2;
-            } else if (scrollPosition > section2.offsetTop) { // Simplify this
-                targetSection = section3;
-            }
-        } else { // Scrolling up
-            if (scrollPosition < section1.offsetTop) {
-                targetSection = nav;
-            } else if (scrollPosition < section2.offsetTop) {
-                targetSection = section1;
-            } else if (scrollPosition < section3.offsetTop) {
-                targetSection = section2;
-            } else { // Simplify this
-                targetSection = section3;
-            }
-
-        }
-
-
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        lastScrollPosition = scrollPosition;
-    }, 80); 
-}); 
-// working 11.5.24-12.56pm
+    lastScrollY = currentScrollY;
+});
