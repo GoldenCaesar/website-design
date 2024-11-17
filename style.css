@@ -269,6 +269,7 @@ nav.hidden {
   margin: 4px auto;   /* Center the lines */
   background-color: black;
   transition: background-color 0.3s ease-in-out;
+  pointer-events: none;
 }
 
 .overlay {
@@ -294,7 +295,7 @@ nav.hidden {
 
 
 /*THIS IS BROKEN, USE JS INSTEAD*/
-.sandwich-menu.overlay-open span { /* Target spans when overlay is open */
+#sandwich.open span { /* Target spans when overlay is open */
   background-color: white;
 }
 
@@ -327,4 +328,193 @@ nav.hidden {
   .sandwich-menu {
     display: block; /* Show sandwich menu on small screens */
   }
+
+   /* General */
+   body {
+    font-size: 16px; /* Example: Adjust base font size */
+  }
+
+  h1 {
+    font-size: 2em; /* Example: Make h1 smaller */
+  }
+
+  /* Section 1 */
+  #section1 .section-content {
+    padding: 10px; /* Reduce padding */
+  }
+
+  /* Section 2 */
+  .section2-header {
+    font-size: 1.2em; /* Adjust font size as needed */
+  }
+
+  .text-box {
+    font-size: 1em; /* Adjust font size as needed */
+  }
+
+    .section2-content {
+        flex-direction: column;  /* Stack content vertically */
+        align-items: center;     /* Center content horizontally */
+    }
+    .text-box, .video-container {
+        width: 90%;            /* Adjust width as needed */
+        text-align: center;    /* Center text within containers */
+        margin: 10px 0;         /* Add some margin between elements */
+    }
+
+
+  /* Section 3 */
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */ /* Adjusted rows for 6 items and 2 columns */
+  }
+  .image-text {
+    font-size: 1em; /* Adjust font size */
+  }
+
+
+    nav {
+        width: 100%; /* Make nav full width on small screens */
+        padding: 5px; /* Reduce padding */
+
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;     /* Center nav links */
+    }
+
+    .nav-list li {
+        margin: 10px 0;      /* Adjust vertical margin */
+    }
+
+    .nav-list a {
+        padding: 8px 16px; /* Reduce padding */
+        font-size: 1em;  /* Reduce font size */
+        display: block; /* Make links full width */
+        text-align: center; /* Center the links text */
+        border-radius: 10px;
+    }
+
+
+    .overlay {
+        padding-top: 20px; /* Add padding */
+    }
+    .overlay-menu {
+        text-align: center; /* Left align menu items */
+    }
+
+
+    .sandwich-menu {
+        left: 10px; /* Adjust position */
+    }
+
+
+}
+
+/* social buttons */
+.wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: rgb(10 102 194);
+  color: #ffffff;
+}
+.wrapper .compass:hover,
+.wrapper .compass:hover .tooltip,
+.wrapper .compass:hover .tooltip::before {
+  background-color: #A98043;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+.wrapper .spotify:hover,
+.wrapper .spotify:hover .tooltip,
+.wrapper .spotify:hover .tooltip::before {
+  background-color: #09b117;
+  color: #ffffff;
+}
+
+.wrapper .envelope:hover,
+.wrapper .envelope:hover .tooltip,
+.wrapper .envelope:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper .users:hover,
+.wrapper .users:hover .tooltip,
+.wrapper .users:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+  background-color: #9d14ed;
+  color: #ffffff;
 }
