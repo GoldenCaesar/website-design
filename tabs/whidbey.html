@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Real Estate</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../tabstyles/neighborhoods.css">
+  <!-- Font Awesome 5.15.1 CSS -->
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
 </head>
 <body>
 
@@ -32,276 +36,121 @@
   <p id="p1">This is a sample paragraph.</p> -->
 
   <section id="section1">
-    <video autoplay muted loop playsinline class="background-video">
-      <source src="resources/homepage-background.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <!-- Content for Section 1 (over the video) -->
-    <div class="section-content">
-      <h2>Section 1 Content</h2>
-      <p>This content is placed over the background video.</p>
-      <img src="resources/LargeLogo-anavivo-white.png" alt="Logo" style="width: 100%; height: auto;">
-    </div>
+    <section id="section1">
+        <img src="../resources/whidbey.jpg" class="background-video">
+        <!-- Content for Section 1 (over the video) -->
+        <div class="section-content">
+          <h1 style="width: 100%;">Whidbey Island</h1>
+          <h2 style="font-style: italic; padding-left: 5%;">Its charming, rural vibe is complemented by easy access to all the amenities of a major metropolis.</h2>
+        </div>
   </section>
 
   <section id="section2">
     <div class="section2-header">
-      <h2>ANAVIVO Podcast</h2>  </div>
-    <div class="section2-content">
-        <div class="lp-container">
-            <h2 class="title lp-h2">Demographics and Employment Data for Whidbey Island, WA</h2>
-            <div class="nav-tab">
-                <span href="#tab-population" data-description=".addition--population" class="nav-tab__tab active">Population</span>
-                <span href="#tab-households" data-description=".addition--households" class="nav-tab__tab">Households</span>
-                <span href="#tab-employment" data-description=".addition--employment" class="nav-tab__tab">Employment</span>
-            </div>
-            <div class="description">
-                <p>
-                <span class="addition addition--households">Whidbey Island has 80 households, with an average household size of 1.61. Data provided by the U.S. Census Bureau.</span>
-                <span class="addition addition--employment">Here’s what the people living in Whidbey Island do for work — and how long it takes them to get there. Data provided by the U.S. Census Bureau.</span>
-                 
-                </p>
-    
-            </div>
-            <div class="tabs-content">
-                <div class="tab active" id="tab-population">
-                    <div class="tab-section tab-section__overview">
-                        <div class="overview-item">
-                            <div>
-                                <h5 class="overview-item__value lp-h5">2,644</h5>
-                                <p class="overview-item__name l12 label">Total Population</p>
-                            </div>
-                        </div> 
-                        <div class="overview-item">
-                            <div>
-                                <h5 class="overview-item__value lp-h5">
-                                High
-                                                            </h5>
-                                <p class="overview-item__name overview-item__name--hint l12 label">Population Density
-                                    <span class="overview-item__hint hint">
-                                        <span class="l14 weight-bold">Population Density</span>
-                                        <span class="l14">This is the number of people per square mile in a neighborhood.</span>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="overview-item">
-                            <div>
-                                <h5 class="overview-item__value lp-h5">22.2</h5>
-                                <p class="overview-item__name l12 label">Median Age</p>
-                            </div>
-                        </div>
-                        <div class="overview-item">
-                            <div>
-                                <h5 class="overview-item__value lp-h5">81.16 / 18.84%</h5>
-                                <p class="overview-item__name l12 label">Men vs Women</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-section tab-section__content">
-                        <div class="population-age">
-                            <p class="tab-section__title l12 label">Population by Age Group</p>
-                            <div class="population-age__item" style="--valuePerc: 0.49%;">
-                                <div class="population-age__bar bar" data-value="0.49">
-                                    <div class="population-age__hint">
-                                        <p>0-9: <span class="value">0.49%</span></p>
-                                    </div>
-                                </div>
-    
-                                <p class="population-age__range l12">0-9 Years</p>
-                            </div>
-                            <div class="population-age__item" style="--valuePerc: 0.57%;">
-                                <div class="population-age__bar bar" data-value="0.57">
-                                    <div class="population-age__hint">
-                                        <p>10-17: <span class="value">0.57%</span></p>
-                                    </div>
-                                </div>
-                                <p class="population-age__range l12">10-17 Years</p>
-                            </div>
-                            <div class="population-age__item" style="--valuePerc: 83.77%;">
-                                <div class="population-age__bar bar" data-value="83.77">
-                                    <div class="population-age__hint">
-                                        <p>18-24: <span class="value">83.77%</span></p>
-                                    </div>
-                                </div>
-                                <p class="population-age__range l12">18-24 Years</p>
-                            </div>
-                            <div class="population-age__item" style="--valuePerc: 15.17%;">
-                                <div class="population-age__bar bar" data-value="15.17">
-                                    <div class="population-age__hint">
-                                        <p>25-64: <span class="value">15.17%</span></p>
-                                    </div>
-                                </div>
-                                <p class="population-age__range l12">25-64 Years</p>
-                            </div>
-                            <div class="population-age__item" style="--valuePerc: %;">
-                                <div class="population-age__bar bar" data-value="">
-                                    <div class="population-age__hint">
-                                        <p>65-74: <span class="value">%</span></p>
-                                    </div>
-                                </div>
-                                <p class="population-age__range l12">65-74 Years</p>
-                            </div>
-                            <div class="population-age__item" style="--valuePerc: %;">
-                                <div class="population-age__bar bar" data-value="">
-                                    <div class="population-age__hint">
-                                        <p>75+: <span class="value">%</span></p>
-                                    </div>
-                                </div>
-                                <p class="population-age__range l12">75+ Years</p>
-                            </div>
-                        </div>
-                        <div class="population-education">
-                            <p class="tab-section__title l12 label">Education Level</p>
-                            <div class="population-education__chart">
-                                <div class="population-education__chart-item chart-item chart-item--school" data-value=""></div>
-                                <div class="population-education__chart-item chart-item chart-item--high-school" data-value="130" style="--valuePerc: 66%;"></div>
-                                <div class="population-education__chart-item chart-item chart-item--associate" data-value="33" style="--valuePerc: 17%;"></div>
-                                <div class="population-education__chart-item chart-item chart-item--bachelor" data-value=""></div>
-                                <div class="population-education__chart-item chart-item chart-item--graduate" data-value="34" style="--valuePerc: 17%;"></div>
-                            </div>
-                            <ul class="population-education__symbols">
-                                <li class="population-education__symbol symbol symbol-school" data-value="">
-                                    <span class="symbol__label l12">Less Than 9th Grade</span>
-                                    <span class="symbol__value value l12">0 (0%)</span>
-                                </li>
-                                <li class="population-education__symbol symbol symbol-high-school" data-value="130">
-                                    <span class="symbol__label l12">High School Degree</span>
-                                    <span class="symbol__value value l12">130 (66%)</span>
-                                </li>
-                                <li class="population-education__symbol symbol symbol-associate" data-value="33">
-                                    <span class="symbol__label l12">Associate Degree</span>
-                                    <span class="symbol__value value l12">33 (17%)</span>
-                                </li>
-                                <li class="population-education__symbol symbol symbol-bachelor" data-value="">
-                                    <span class="symbol__label l12">Bachelor Degree</span>
-                                    <span class="symbol__value value l12">0 (0%)</span>
-                                </li>
-                                <li class="population-education__symbol symbol symbol-graduate" data-value="34">
-                                    <span class="symbol__label l12">Graduate Degree</span>
-                                    <span class="symbol__value value l12">34 (17%)</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab" id="tab-households">
-                    <div class="tab-section tab-section__overview tab-section__overview--three">
-                        <div class="overview-item">
-                            <div>
-                                <h5 class="overview-item__value lp-h5">80</h5>
-                                <p class="overview-item__name l12 label">Total Households</p>
-                            </div>
-                        </div>                    
-                        <div class="overview-item">
-                            <div>
-                                <h5 class="overview-item__value lp-h5">1.61</h5>
-                                <p class="overview-item__name l12 label">Average Household Size</p>
-                            </div>
-                        </div>
-                        <div class="overview-item">
-                            <div>
-                                <h5 class="overview-item__value lp-h5">$24,135</h5>
-                                <p class="overview-item__name l12 label">Average individual Income</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-section chart-binary chart-binary--households">
-                        <p class="tab-section__title chart-binary__title l12 label">Households with Children</p>                    
-                        <div class="chart-binary__chart" data-value="14" data-total="80" style="--value-second: 66; --valueFormatted: 14; --valueFormatted2: 66; --valuePerc: 18%; --valuePerc2: 82%;">
-                            <div class="chart-binary__item chart-binary__item-first">
-                                <div class="chart-binary__bar"></div>
-                                <p class="chart-binary__label l12">With Children: <span class="value value-first">14 (18%)</span></p>
-                            </div>
-                            <div class="chart-binary__item chart-binary__item-second">
-                                <div class="chart-binary__bar"></div>
-                                <p class="chart-binary__label l12">Without Children: <span class="value value-second">66 (82%)</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-section">
-                        <p class="tab-section__title l12 label">Marital Status</p>
-                        <div class="chart-monobar chart-monobar--marital-status">
-                            <div class="chart-monobar__item chart-monobar__item--married" data-value="2.16" style="--value: 2.16; --valuePerc: 2%;">
-                                <div class="chart-monobar__bar"></div>
-                                <div class="chart-monobar__copy">
-                                    <span class="chart-monobar__label l12">Married</span>
-                                    <span class="chart-monobar__value value l12">2%</span>
-                                </div>
-                            </div>
-                            <div class="chart-monobar__item chart-monobar__item--single" data-value="90.96" style="--value: 90.96; --valuePerc: 91%;">
-                                <div class="chart-monobar__bar"></div>
-                                <div class="chart-monobar__copy">
-                                    <span class="chart-monobar__label l12">Single</span>
-                                    <span class="chart-monobar__value value l12">91%</span>
-                                </div>
-                            </div>
-                            <div class="chart-monobar__item chart-monobar__item--divorced" data-value="0.42" style="--value: 0.42; --valuePerc: 0%;">
-                                <div class="chart-monobar__bar"></div>
-                                <div class="chart-monobar__copy">
-                                    <span class="chart-monobar__label l12">Divorced</span>
-                                    <span class="chart-monobar__value value l12">0%</span>
-                                </div>
-                            </div>
-                            <div class="chart-monobar__item chart-monobar__item--separated" data-value="5.82" style="--value: 5.82; --valuePerc: 6%;">
-                                <div class="chart-monobar__bar"></div>
-                                <div class="chart-monobar__copy">
-                                    <span class="chart-monobar__label l12">Separated</span>
-                                    <span class="chart-monobar__value value l12">6%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab" id="tab-employment">
-                    <div class="tab-section chart-binary chart-binary--employment">
-                        <p class="tab-section__title chart-binary__title l12 label">Blue vs White Collar Workers</p>                    
-                        <div class="chart-binary__chart" data-value="" data-value-second="1.21" data-units="%" style="--valueFormatted: NaN; --valueFormatted2: 1; --valuePerc: NaN%; --valuePerc2: NaN%;">
-                            <div class="chart-binary__item chart-binary__item-first">
-                                <div class="chart-binary__bar"></div>
-                                <p class="chart-binary__label l12">Blue Collar: <span class="value value-first">NaN%</span></p>
-                            </div>
-                            <div class="chart-binary__item chart-binary__item-second">
-                                <div class="chart-binary__bar"></div>
-                                <p class="chart-binary__label l12">White Collar: <span class="value value-second">NaN%</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-section chart-monobar chart-monobar--commute-time">
-                        <p class="tab-section__title l12 label">Commute Time</p>
-                        <div class="chart-monobar__item chart-monobar__item--period1" data-value="88.09" style="--value: 88.09; --valuePerc: 88%;">
-                            <div class="chart-monobar__bar"></div>
-                            <div class="chart-monobar__copy">
-                                <span class="chart-monobar__label l12">0 to 14 Minutes</span>
-                                <span class="chart-monobar__value value l12">88%</span>
-                            </div>
-                        </div>
-                        <div class="chart-monobar__item chart-monobar__item--period2" data-value="10.17" style="--value: 10.17; --valuePerc: 10%;">
-                            <div class="chart-monobar__bar"></div>
-                            <div class="chart-monobar__copy">
-                                <span class="chart-monobar__label l12">15 to 29 Minutes</span>
-                                <span class="chart-monobar__value value l12">10%</span>
-                            </div>
-                        </div>
-                        <div class="chart-monobar__item chart-monobar__item--period3" data-value="0.11" style="--value: 0.11; --valuePerc: 0%;">
-                            <div class="chart-monobar__bar"></div>
-                            <div class="chart-monobar__copy">
-                                <span class="chart-monobar__label l12">30 to 59 Minutes</span>
-                                <span class="chart-monobar__value value l12">0%</span>
-                            </div>
-                        </div>
-                        <div class="chart-monobar__item chart-monobar__item--period4" data-value="" style="--value: NaN; --valuePerc: 0%;">
-                            <div class="chart-monobar__bar"></div>
-                            <div class="chart-monobar__copy">
-                                <span class="chart-monobar__label l12">60+ Minutes</span>
-                                <span class="chart-monobar__value value l12">0%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <h2>A rural respite amongst stunning mountain vistas</h2>  
+    </div>
+        <h1 class="title">Whidbey Island Real Estate</h1>
+        <div class="blog">
+            <p>Whidbey Island is an idyllic oasis surrounded by natural beauty and nestled against a 
+                backdrop of the snow-covered Olympic and Cascade Mountains. Though it’s only approximately 
+                30 miles from Seattle, Whidbey Island feels worlds away from the hectic pace of the city.
+            </p>
+
+            <p>Its charming, rural vibe is complemented by easy access to all the amenities of a major 
+                metropolis, and it’s situated close to several charming towns, including Langley, 
+                Oak Harbor, and Coupeville. It’s also home to 
+                <a class="chocolate_links" href="https://www.cnic.navy.mil/regions/cnrnw/installations/nas_whidbey_island.html">
+                    Naval Air Station (NAS) Whidbey Island
+                </a> and many waterfront communities. The island is 
+                nestled between the Olympic Peninsula and the Seattle-Metro corridor of western Washington 
+                and forms the northern boundary of Puget Sound.
+            </p>
+
+            <h3>What to Love</h3>
+            <ul>
+                <li>
+                    <div>Brimming with arts and culture</div>
+                </li>
+                <li>
+                    <div>Easy access to Seattle, Everett and Bellingham</div>
+                </li>
+                <li>
+                    <div>Natural beauty with lush parks and beautiful beaches</div>
+                </li>
+            </ul>
+            <h3>Whidbey Island Homes and Architecture</h3>
+            <p>Whidbey Island, situated in Washington State's Puget Sound, is a haven characterized 
+                by a diverse architectural landscape that beautifully integrates with its natural 
+                surroundings. The island features an eclectic mix of architectural styles, from 
+                charming seaside cottages to expansive waterfront estates. Many homes on Whidbey 
+                Island embrace a Northwest architectural style, combining elements such as large 
+                windows to capture stunning views, cedar shingles, and open floor plans to merge 
+                indoor and outdoor living seamlessly. Some properties are designed in a modern, 
+                eco-friendly approach, featuring sustainable materials and energy-efficient designs 
+                that complement the island's commitment to environmental preservation.
+            </p>
+
+            <p>The architectural diversity of Whidbey Island offers a unique blend of heritage and 
+                innovation. Historic homes on the island, including classic farmhouses and cabins, 
+                stand as testaments to the area's rich history, while newer constructions showcase 
+                contemporary design elements and technologies. Whether nestled within the island's 
+                forests or perched on the coast, homes on Whidbey Island not only provide comfortable 
+                living spaces but also celebrate the connection between architecture and the surrounding 
+                natural beauty, creating an environment that resonates with both charm and functionality 
+                for its residents.
+            </p>
+            <h3>Local Lifestyle</h3>
+            <p>Whidbey Island is a friendly, small town-feel in a warm, welcoming, and low-key island atmosphere. It’s a great place to raise a family, as it’s home to excellent public schools and several private schooling opportunities. </p>
+
+            <p>Often referred to as Puget Sound’s Largest Artist’s Colony, Whidbey encourages participation in the arts and outdoors, and is home to numerous working artists, writers, and performers. These include many well-known painters, sculptors, glass artists, woodworkers, metalworkers, mixed media artists, photographers, authors, poets, actors, and musicians. The south end of the island is a true haven for those who enjoy the fine arts.
+            </p>
+
+            <p>In addition to being a haven for artists, the southern end of Whidbey 
+                Island also serves as a commuter community for the nearby cities home to major 
+                names such as Amazon, Boeing, Microsoft, and Netflix. Commuters from those areas 
+                enjoy easy access to major transportation to and from various nearby cities. 
+                The <a class="chocolate_links" href="https://www.wsdot.wa.gov/ferries/vesselwatch/TerminalDetail.aspx?terminalid=5">
+                    Clinton Ferry
+                </a> connects Whidbey Island to Seattle in the south, while the 
+                <a class="chocolate_links" href="https://whidbeycamanoislands.com/history-of-deception-pass-bridge/">
+                    Deception Pass Bridge
+                </a> connects the island on the north end, and <a class="chocolate_links" href="https://www.wsdot.wa.gov/ferries/vesselwatch/TerminalDetail.aspx?terminalid=11">
+                    Coupeville Ferry
+                </a> 
+                connects to the Olympic Peninsula in the center.
+            </p>
+            <h3>Things to Do</h3>
+            <p>This small island oasis is brimming with many great galleries, studios, and art walks, as well as state parks and beaches. It’s perfect for outdoor recreation like kayaking, hiking, boating, or just exploring the local flora and fauna.</p>
+
+            <p>Whidbey Island is home to <a class="chocolate_links" href="https://www.nps.gov/ebla/index.htm">
+                Ebey’s Landing National Historical Reserve
+            </a>, 
+                the first of its kind in the country to preserve the rural history and 
+                culture of the island and to protect the area’s rare flora and fauna. The island 
+                also boasts <a class="chocolate_links" href="https://parks.state.wa.us/497/Deception-Pass">
+                    Deception Pass State Park
+                </a>, Washington's most-visited state park. 
+                Locals and visitors alike flock to Deception Pass to enjoy stunning sunsets, 
+                fishing, forest trails, and miles of Puget Sound beachfront, as well as bird, 
+                seal, and whale-watching. The impressive <a class="chocolate_links" href="https://whidbeycamanoislands.com/history-of-deception-pass-bridge/">
+                    Deception Pass Bridge
+                </a> towers high above 
+                the waters of Deception Pass and boasts sweeping views of the water and forest below. 
+                This bridge is known for fostering the eventual placement of NAS Whidbey in Oak Harbor.
+            </p>
+            <p>Additional parks highly worth exploring include <a class="chocolate_links" href="https://parks.state.wa.us/505/Fort-Casey">Fort Casey State Park</a>, 
+                <a class="chocolate_links" href="https://parks.state.wa.us/526/Joseph-Whidbey">Joseph Whidbey State Park</a>, <a class="chocolate_links" href="https://parks.state.wa.us/507/Fort-Ebey">Fort Ebey State Park</a>, 
+                <a class="chocolate_links" href="https://www.wwta.org/sites/possession-point/">Possession Point State Park</a>, <a class="chocolate_links" href="https://parks.state.wa.us/585/South-Whidbey">South Whidbey State Park</a>, <a class="chocolate_links" href="https://www.wta.org/go-hiking/hikes/dugualla-state-park">Dugualla State Park</a>, 
+                <a class="chocolate_links" href="https://portoc.org/greenbank-farm/">Greenbank Farm</a>, and <a class="chocolate_links" href="https://www.wta.org/go-hiking/hikes/double-bluff">Double Bluff Beach</a>.
+            </p>
+            <p>Each year, bicyclists rejoice at the <a class="chocolate_links" href="https://www.tourdewhidbey.org/">Tour de Whidbey</a>, known as one of the most 
+                beautiful bike rides in the Pacific Northwest. This annual fundraising event features 
+                various routes, from the family-friendly 10-mile route to the 100-mile excursion.</p>
+
+            <div class="neighborhood_map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340678.9474342803!2d-122.88911086413634!3d48.157397718639174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f8a245ab1ca67%3A0x821486fac51acfa8!2sWhidbey%20Island!5e0!3m2!1sen!2sus!4v1732060233619!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-    </div>
   </section>
 
   <section id="section3">
@@ -309,33 +158,90 @@
       <h2>Featured Neighborhoods</h2>
     </div>
     <div class="image-grid">
-      <a href="tabs/whidbey.html" class="image-container">
-        <img src="resources/whidbey.jpg" alt="Whidbey Island">
+      <a href="whidbey.html" class="image-container">
+        <img src="../resources/whidbey.jpg" alt="Whidbey Island">
         <div class="image-text">Whidbey Island</div>
       </a>
-      <a href="tabs/oakharbor.html" class="image-container">
-        <img src="resources/oakharbor.jpg" alt="Oak Harbor">
+      <a href="oakharbor.html" class="image-container">
+        <img src="../resources/oakharbor.jpg" alt="Oak Harbor">
         <div class="image-text">Oak Harbor (NAS Whidbey Island)</div>
       </a>
-      <a href="tabs/coupeville.html" class="image-container">
-        <img src="resources/coupeville.jpg" alt="Coupeville">
+      <a href="coupeville.html" class="image-container">
+        <img src="../resources/coupeville.jpg" alt="Coupeville">
         <div class="image-text">Coupeville</div>
       </a>
-      <a href="tabs/anacortes.html" class="image-container">
-        <img src="resources/anacortes.jpg" alt="Anacortes">
+      <a href="anacortes.html" class="image-container">
+        <img src="../resources/anacortes.jpg" alt="Anacortes">
         <div class="image-text">Anacortes</div>
       </a>
-      <a href="tabs/sanjuan.html" class="image-container">
-        <img src="resources/sanjuan.jpg" alt="San Juan Islands">
+      <a href="sanjuan.html" class="image-container">
+        <img src="../resources/sanjuan.jpg" alt="San Juan Islands">
         <div class="image-text">San Juan Islands</div>
       </a>
-      <a href="tabs/langley.html" class="image-container">
-        <img src="resources/langley.jpg" alt="Langley">
+      <a href="langley.html" class="image-container">
+        <img src="../resources/langley.jpg" alt="Langley">
         <div class="image-text">Langley</div>
       </a>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <section id="section5">
+    <div class="section5-header">
+      <h2>You've reached the end of our page!</h2>
+      <h3>Navigate the rest of our site using the tabs below</h3>
+      <div class="wrapper">
+        <a href="#" onclick="window.open('https\:\/\/www.facebook.com/livingonwhidbey')" class="icon facebook">
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="#" onclick="window.open('https\:\/\/www.linkedin.com/in/tcmiller2')" class="icon linkedin">
+          <div class="tooltip">LinkedIn</div>
+          <span><i class="fab fa-linkedin"></i></span>
+        </a>
+        <a href="#" onclick="window.open('https\:\/\/www.youtube.com/@anavivodotcom')" class="icon youtube">
+          <div class="tooltip">Youtube</div>
+          <span><i class="fab fa-youtube"></i></span>
+        </a>
+        <a href="#" onclick="window.open('https\:\/\/open.spotify.com/show/3fzsVs7Ql1kAhBmYhjDtvx?si=715511fb27334f0b')" class="icon spotify">
+          <div class="tooltip">Spotify</div>
+          <span><i class="fab fa-brands fa-spotify"></i></span>
+        </a>      
+        <a href="#" onclick="window.open('https\:\/\/www.compass.com/agents/tim-c-miller/')" class="icon sign compass">
+          <div class="tooltip">Compass</div>
+          <span><i class="fas fa-sign"></i></span>
+        </a>      
+        <!-- <a href="#" class="icon copyright compass">
+          <div class="tooltip">Compass</div>
+          <span><i class="fas fa-copyright"></i></span>
+        </a> -->
+        <!-- <a href="#" class="icon compass">
+          <div class="tooltip">Compass</div>
+          <span id="compass_span" class="fab" style="justify-content: space-evenly;">
+
+              <svg class="fab fa-compass" id="compass_svg" style="text-align: center;" viewBox="0 0 65 58">
+                <path d="M29.86 0a30 30 0 00.28 60 30.03 30.03 0 0030-30A30 30 0 0029.86 0zm.28 8a22.03 22.03 0 0122 22 22 22 0 11-22-22zm7.18 9.17l-20 20 5.65 5.66 20-20z">
+                </path>
+              </svg>
+
+          </span>
+        </a> -->
+        <a href="#" onclick="window.open('https\:\/\/www.google.com/maps/place/Tim+C.+Miller/@48.304983,-122.646036,15z/data=!4m7!3m6!1s0x0:0x69b8fb097e5420d!8m2!3d48.304983!4d-122.646036!9m1!1b1')" class="icon users">
+            <div class="tooltip">Reviews</div>
+            <span><i class="fas fa-user-edit"></i></span>
+        </a>
+        <a href="#" onclick="window.open('mailto:Tim.C.Miller@outlook.com?subject=From%20Anavivo')" class="icon envelope">
+            <div class="tooltip">Email</div>
+            <span><i class="fas fa-envelope"></i></span>
+        </a>
+        <a href="#" onclick="window.open('tel:3609690669')" class="icon phone">
+            <div class="tooltip">Call</div>
+            <span><i class="fas fa-phone"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="../tabscripts/neighborhoods.js"></script>
 </body>
 </html>
