@@ -616,3 +616,16 @@ nav.hidden {
     color: #666; /* Lighter gray for copyright */
 
 }
+
+.feathered-white-text {
+  color: white;
+  text-shadow: 
+    -1px -1px 2px rgba(0,0,0,0.4), /* Top-left shadow */
+    1px 1px 2px rgba(0,0,0,0.4),  /* Bottom-right shadow */
+    0px 0px 5px rgba(0,0,0,0.2);   /* Centered blur for feathering */
+
+  /* Optional: Add a very slight background or text color difference for even better contrast */
+  /* background-color: rgba(255, 255, 255, 0.05); */ /* Subtle white background */
+  /* or */
+  /* color: rgba(255, 255, 255, 0.95); */      /* Slightly off-white text */ 
+}

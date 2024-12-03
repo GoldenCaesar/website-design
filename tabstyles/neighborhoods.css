@@ -560,3 +560,91 @@ section {
     background-color: #9d14ed;
     color: #ffffff;
   }
+
+  
+.footer-nav {
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  margin: 0 10px;
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer-nav a:hover {
+color: #0056b3; /* Darker blue on hover */
+}
+
+.image-container-footer-links {
+width: 100%;
+display: flex;
+justify-content: space-around; /* Distribute images evenly */
+align-items: center;      /* Vertically center images */
+width: 50%;
+margin-left: 25%;
+padding: 10px 0;         /* Add some padding around images */
+background-color: #f0f0f0; /* Optional: Add a background color */
+}
+
+.image-container-footer-links img {
+max-width: 100%;   /* Ensures images scale down to fit */
+height: auto;       /* Maintains aspect ratio */
+display: block;     /* Prevents small space below image in some browsers */
+}
+
+
+.agent-info {
+text-align: center;
+  margin-bottom: 20px;
+}
+
+.agent-name {
+font-weight: bold;
+}
+
+.legal-info {
+font-size: 0.9em;
+line-height: 1.5;
+text-align: left; /* Align legal text to left for better readability*/
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd; /* Add a top border */
+  padding-top: 20px; /* Add some padding above the copyright */
+  text-align: center;
+  font-size: 0.8em;
+  color: #666; /* Lighter gray for copyright */
+
+}
+
+.footer-content {
+  max-width: 960px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the content */
+  text-align: center;  /* Center align text initially*/
+}
+
+.end-message {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.navigation-prompt {
+    margin-bottom: 20px;
+}
+
+  .feathered-white-text {
+    color: white;
+    text-shadow: 
+      -1px -1px 2px rgba(0,0,0,0.4), /* Top-left shadow */
+      1px 1px 2px rgba(0,0,0,0.4),  /* Bottom-right shadow */
+      0px 0px 5px rgba(0,0,0,0.2);   /* Centered blur for feathering */
+  
+    /* Optional: Add a very slight background or text color difference for even better contrast */
+    /* background-color: rgba(255, 255, 255, 0.05); */ /* Subtle white background */
+    /* or */
+    /* color: rgba(255, 255, 255, 0.95); */      /* Slightly off-white text */ 
+  }
