@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Real Estate</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
+  <!-- Font Awesome 5.15.1 CSS -->
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+<link rel="icon" type="image/png" sizes="32x32" href="../resources\favicon.png">
 </head>
 <body>
-  <h1 id="h1">Welcome to My Website</h1>
-  <p>This is a sample paragraph.</p>
-  <a href="about.html">About Us</a>
+
+  <nav id="nav">
+    <div class="nav-container">
+        <div id="sandwich" class="sandwich-menu">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="realestate.html">Real Estate</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="overlay">
+        <ul class="overlay-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Real Estate</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- <h1 id="h1">Welcome to My Website</h1>
+  <p id="p1">This is a sample paragraph.</p> -->
 
   <section id="section1">
     <video autoplay muted loop playsinline class="background-video">
@@ -16,22 +43,72 @@
     </video>
     <!-- Content for Section 1 (over the video) -->
     <div class="section-content">
-      <h2>Section 1 Content</h2>
-      <p>This content is placed over the background video.</p>
+      <h2 style="padding-left: 3%;">Tim C. Miller</h2>
+      <p style="font-style: italic; padding-left: 5%;">Upward Living</p>
+      <img src="resources/LargeLogo-anavivo-white.svg" alt="Logo" style="width: 70%; height: auto;">
+
+      <div class="wrapper">
+        <a href="#" onclick="window.open('https\:\/\/www.facebook.com/livingonwhidbey')" class="icon facebook">
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="#" onclick="window.open('https\:\/\/www.linkedin.com/in/tcmiller2')" class="icon linkedin">
+          <div class="tooltip">LinkedIn</div>
+          <span><i class="fab fa-linkedin"></i></span>
+        </a>
+        <a href="#" onclick="window.open('https\:\/\/www.youtube.com/@anavivodotcom')" class="icon youtube">
+          <div class="tooltip">Youtube</div>
+          <span><i class="fab fa-youtube"></i></span>
+        </a>
+        <a href="#" onclick="window.open('https\:\/\/open.spotify.com/show/3fzsVs7Ql1kAhBmYhjDtvx?si=715511fb27334f0b')" class="icon spotify">
+          <div class="tooltip">Spotify</div>
+          <span><i class="fab fa-brands fa-spotify"></i></span>
+        </a>      
+        <a href="#" onclick="window.open('https\:\/\/www.compass.com/agents/tim-c-miller/')" class="icon sign compass">
+          <div class="tooltip">Compass</div>
+          <span><i class="fas fa-sign"></i></span>
+        </a>      
+        <!-- <a href="#" class="icon copyright compass">
+          <div class="tooltip">Compass</div>
+          <span><i class="fas fa-copyright"></i></span>
+        </a> -->
+        <!-- <a href="#" class="icon compass">
+          <div class="tooltip">Compass</div>
+          <span id="compass_span" class="fab" style="justify-content: space-evenly;">
+
+              <svg class="fab fa-compass" id="compass_svg" style="text-align: center;" viewBox="0 0 65 58">
+                <path d="M29.86 0a30 30 0 00.28 60 30.03 30.03 0 0030-30A30 30 0 0029.86 0zm.28 8a22.03 22.03 0 0122 22 22 22 0 11-22-22zm7.18 9.17l-20 20 5.65 5.66 20-20z">
+                </path>
+              </svg>
+
+          </span>
+        </a> -->
+        <a href="#" onclick="window.open('https\:\/\/www.google.com/maps/place/Tim+C.+Miller/@48.304983,-122.646036,15z/data=!4m7!3m6!1s0x0:0x69b8fb097e5420d!8m2!3d48.304983!4d-122.646036!9m1!1b1')" class="icon users">
+          <div class="tooltip">Reviews</div>
+          <span><i class="fas fa-user-edit"></i></span>
+        </a>
+        <a href="#" onclick="window.open('mailto:Tim.C.Miller@outlook.com?subject=From%20Anavivo')" class="icon envelope">
+          <div class="tooltip">Email</div>
+          <span><i class="fas fa-envelope"></i></span>
+        </a>
+        <a href="#" onclick="window.open('tel:3609690669')" class="icon phone">
+          <div class="tooltip">Call</div>
+          <span><i class="fas fa-phone"></i></span>
+        </a>
+      </div>
+
+
     </div>
   </section>
 
   <section id="section2">
     <div class="section2-header">
-      <h2>Section 2 Title</h2>  </div>
+      <h2>ANAVIVO Podcast</h2>  </div>
     <div class="section2-content">
-      <div class="text-box">
-          <p>This is the text content for section 2.  It will be justified to the left.</p>
-          <p>Add more paragraphs as needed.</p>
-        </div>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Q7B_G5YUDXo?si=BZivya6avBWgevic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+          <div style="text-align: center; overflow-y: scroll; flex: auto">
+            <iframe src="https://castbox.fm/app/castbox/player/id5292240?v=8.22.11&amp;autoplay=0" width="100%" height="500" frameborder="0">
+            </iframe>
+          </div>
     </div>
   </section>
 
@@ -40,32 +117,107 @@
       <h2>Featured Neighborhoods</h2>
     </div>
     <div class="image-grid">
-      <a href="whidbey.html" class="image-container">
+      <a href="tabs/whidbey.html" class="image-container">
         <img src="resources/whidbey.jpg" alt="Whidbey Island">
         <div class="image-text">Whidbey Island</div>
       </a>
-      <a href="oakharbor.html" class="image-container">
+      <a href="articles/week24.html" class="image-container">
         <img src="resources/oakharbor.jpg" alt="Oak Harbor">
         <div class="image-text">Oak Harbor (NAS Whidbey Island)</div>
       </a>
-      <a href="coupeville.html" class="image-container">
+      <a href="tabs/coupeville.html" class="image-container">
         <img src="resources/coupeville.jpg" alt="Coupeville">
         <div class="image-text">Coupeville</div>
       </a>
-      <a href="anacortes.html" class="image-container">
+      <a href="tabs/anacortes.html" class="image-container">
         <img src="resources/anacortes.jpg" alt="Anacortes">
         <div class="image-text">Anacortes</div>
       </a>
-      <a href="sanjuan.html" class="image-container">
+      <a href="tabs/sanjuan.html" class="image-container">
         <img src="resources/sanjuan.jpg" alt="San Juan Islands">
         <div class="image-text">San Juan Islands</div>
       </a>
-      <a href="langley.html" class="image-container">
+      <a href="tabs/langley.html" class="image-container">
         <img src="resources/langley.jpg" alt="Langley">
         <div class="image-text">Langley</div>
       </a>
     </div>
   </section>
+
+  <section id="section5">
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="end-message">You've reached the end of our page!</p>
+        <p class="navigation-prompt">Navigate the rest of our site using the tabs below</p>
+        <!--  Add your navigation tabs/links here -->
+        <div class="footer-nav flex-direction: column;">
+          <div class="page_links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Real Estate</a>
+          </div>
+          <!-- Add more links as needed -->
+        </div>
+          <div class="wrapper">
+            <a href="#" onclick="window.open('https\:\/\/www.facebook.com/livingonwhidbey')" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" onclick="window.open('https\:\/\/www.linkedin.com/in/tcmiller2')" class="icon linkedin">
+              <div class="tooltip">LinkedIn</div>
+              <span><i class="fab fa-linkedin"></i></span>
+            </a>
+            <a href="#" onclick="window.open('https\:\/\/www.youtube.com/@anavivodotcom')" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+            <a href="#" onclick="window.open('https\:\/\/open.spotify.com/show/3fzsVs7Ql1kAhBmYhjDtvx?si=715511fb27334f0b')" class="icon spotify">
+              <div class="tooltip">Spotify</div>
+              <span><i class="fab fa-brands fa-spotify"></i></span>
+            </a>      
+            <a href="#" onclick="window.open('https\:\/\/www.compass.com/agents/tim-c-miller/')" class="icon sign compass">
+              <div class="tooltip">Compass</div>
+              <span><i class="fas fa-sign"></i></span>
+            </a>
+            <a href="#" onclick="window.open('https\:\/\/www.google.com/maps/place/Tim+C.+Miller/@48.304983,-122.646036,15z/data=!4m7!3m6!1s0x0:0x69b8fb097e5420d!8m2!3d48.304983!4d-122.646036!9m1!1b1')" class="icon users">
+                <div class="tooltip">Reviews</div>
+                <span><i class="fas fa-user-edit"></i></span>
+            </a>
+            <a href="#" onclick="window.open('mailto:Tim.C.Miller@outlook.com?subject=From%20Anavivo')" class="icon envelope">
+                <div class="tooltip">Email</div>
+                <span><i class="fas fa-envelope"></i></span>
+            </a>
+            <a href="#" onclick="window.open('tel:3609690669')" class="icon phone">
+                <div class="tooltip">Call</div>
+                <span><i class="fas fa-phone"></i></span>
+            </a>
+          </div>
+          <div class="agent-info">
+              <p class="agent-name">Tim C. Miller</p>
+              <p class="agent-title">Real Estate Professional, Serving Clients Across the Nation</p> </div>
+        <div class="legal-info">
+          <p>Tim C. Miller is a REALTOR® and Managing Broker at COMPASS. Compass is a licensed real estate broker and abides by equal 
+            housing opportunity laws. All material presented herein is intended for informational purposes only. Information is compiled 
+            from sources deemed reliable but is subject to errors, omissions, changes in price, condition, sale, or withdrawal without notice. 
+            No statement is made as to accuracy of any description. All measurements and square footages are approximate. This is not intended to 
+            solicit property already listed. Nothing herein shall be construed as legal, accounting or other professional advice outside the 
+            realm of real estate brokerage.</p>
+        </div>
+        <div class="image-container-footer-links">
+          <a href="#"><img src="image1.png" alt="Image 1"></a>
+          <a href="#"><img src="image2.png" alt="Image 2"></a>
+          <a href="#"><img src="image3.png" alt="Image 3"></a>
+          <a href="#"><img src="image4.png" alt="Image 4"></a>
+          <a href="#"><img src="image5.png" alt="Image 5"></a>
+        </div>
+      </div>
+    
+    
+      <div class="footer-bottom">
+            <p>© 2014-2025 Tim C. Miller. All rights reserved.</p> </div>
+    </footer>
+  </section>
+
 
   <script src="script.js"></script>
 </body>

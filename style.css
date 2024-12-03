@@ -575,6 +575,23 @@ nav.hidden {
   color: #0056b3; /* Darker blue on hover */
 }
 
+.image-container-footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Distribute images evenly */
+  align-items: center;      /* Vertically center images */
+  width: 50%;
+  margin-left: 25%;
+  padding: 10px 0;         /* Add some padding around images */
+  background-color: #f0f0f0; /* Optional: Add a background color */
+}
+
+.image-container-footer-links img {
+  max-width: 100%;   /* Ensures images scale down to fit */
+  height: auto;       /* Maintains aspect ratio */
+  display: block;     /* Prevents small space below image in some browsers */
+}
+
 
 .agent-info {
   text-align: center;
