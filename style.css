@@ -35,6 +35,16 @@ section {
   margin: 0;
 }
 
+.hidden {
+  opacity: 0; /* Or use transform: translateY(-100%); */
+  transition: opacity 0.3s ease-in-out; /* Adjust transition properties */
+}
+
+nav {
+  /* ... other nav styles ... */
+  transition: opacity 0.3s ease-in-out;  /* Important for smooth transitions */
+}
+
 /* ... other section styles ... */
 
 @font-face {
@@ -107,6 +117,12 @@ em {
   align-items: center;    /* Center vertically */
   font-family: 'Compass', sans-serif; /* Assuming Compass is already defined */
   font-weight: bold;
+}
+
+.blog p, .blog ul {
+  padding: 0 10% 0 10%;
+  text-align: justify;
+  font-family: system-ui, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .section2-content {
@@ -517,4 +533,69 @@ nav.hidden {
 .wrapper .phone:hover .tooltip::before {
   background-color: #9d14ed;
   color: #ffffff;
+}
+
+.footer {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 40px 20px; /* Padding around the content */
+  font-family: sans-serif;
+  color: #333; /* Dark gray text */
+}
+
+.footer-content {
+  max-width: 960px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the content */
+  text-align: center;  /* Center align text initially*/
+}
+
+.end-message {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.navigation-prompt {
+    margin-bottom: 20px;
+}
+
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    margin-bottom: 20px;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer-nav a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+
+.agent-info {
+  text-align: center;
+    margin-bottom: 20px;
+}
+
+.agent-name {
+  font-weight: bold;
+}
+
+.legal-info {
+  font-size: 0.9em;
+  line-height: 1.5;
+  text-align: left; /* Align legal text to left for better readability*/
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd; /* Add a top border */
+    padding-top: 20px; /* Add some padding above the copyright */
+    text-align: center;
+    font-size: 0.8em;
+    color: #666; /* Lighter gray for copyright */
+
 }
