@@ -103,10 +103,17 @@ em {
 }
 
 #section2 {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   margin: 0;
   position: relative; /* Needed for absolute positioning of children */
 }
+
+.chocolate_links {    
+  text-decoration: none;
+  color: chocolate;
+}
+
 
 .section2-header {
   background-color: rgba(43, 42, 43, 1);
