@@ -109,6 +109,13 @@ em {
   position: relative; /* Needed for absolute positioning of children */
 }
 
+.expanding-section {
+  height: auto;
+  min-height: 100vh;
+  margin: 0;
+  position: relative; /* Needed for absolute positioning of children */
+}
+
 .chocolate_links {    
   text-decoration: none;
   color: chocolate;
